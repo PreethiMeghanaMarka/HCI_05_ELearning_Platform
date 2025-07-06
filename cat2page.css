@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6a95f8;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 20px;
+}
+
+.navbar nav ul li {
+    margin: 0 10px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.navbar nav ul li a.active {
+    color: yellow;
+}
+
+.notes-hero {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #a3d1e0, #e6edf2);
+    color: #293153;
+}
+
+.notes-hero h1 {
+    font-size: 28px;
+}
+
+.notes-hero p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #555;
+}
+
+.notes-content {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f3f3f3;
+}
+
+.notes-list,
+.filters {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notes-list ul,
+.filters ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notes-list ul li a {
+    text-decoration: none;
+    color: #293153;
+    font-weight: bold;
+    display: block;
+    padding: 8px 0;
+    transition: color 0.3s;
+}
+
+.notes-list ul li a:hover {
+    color: #007bff;
+}
+
+.filters h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.filters ul li {
+    font-size: 16px;
+    color: #333;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.filters ul li:hover {
+    color: #007bff;
+}

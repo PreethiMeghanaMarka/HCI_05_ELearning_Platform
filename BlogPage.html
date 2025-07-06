@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6a95f8;
+    padding: 10px 20px;
+    color: white;
+  }
+
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .navbar nav ul li {
+    margin: 0 10px;
+  }
+
+  .navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .navbar nav ul li a.active{
+    color: yellow;
+  }
+
+  .navbar nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+        .content {
+            padding: 2rem;
+        }
+
+        .title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .search-bar input {
+            padding: 0.5rem;
+            font-size: 1rem;
+            
+        }
+
+        .search-bar button {
+            padding: 0.5rem;
+            background-color: #4c6ef5;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .blogs {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .blog-post {
+            display: flex;
+            gap: 1.5rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 1rem;
+        }
+
+        .blog-image {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            background-color: #ccc;
+        }
+
+        .blog-content {
+            flex-grow: 1;
+        }
+
+        .blog-content h2 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .meta {
+            font-size: 0.9rem;
+            color: #777;
+            margin: 0.5rem 0;
+        }
+
+        .excerpt {
+            color: #555;
+        }
+
+        .read-more {
+            color: #4c6ef5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .advertisement {
+            display: flex;
+            align-items: center;
+            margin-top: 2rem;
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border: 1px solid #ddd;
+        }
+
+        .ad-banner {
+            width: 200px;
+            height: 100px;
+            object-fit: cover;
+            background-color: #ccc;
+            margin-right: 1rem;
+        }
+
+        .ad-content h2 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .ad-content p {
+            color: #555;
+        }
+        .combine{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Learn and Grow</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="coursesPage.html">Courses</a></li>
+                <li><a href="NotesPage.html">Notes</a></li>
+                <li><a href="BlogPage.html" class="active">Blog</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="AboutUspage.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <div class="combine">
+        <h1 class="title">Popular Blogs</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search blogs..." />
+            <button>&#128269;</button>
+        </div>
+    </div>
+
+        <section class="blogs">
+           
+            <article class="blog-post">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240206103015/Data-Sciecne-Projects.webp" alt="Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <h2>Planning Your Data Science Project</h2>
+                    <p class="meta">by Vinod Chugani on October 7, 2024 in <span>Data Science</span> &#128172; 0</p>
+                    <p class="excerpt">
+                        Effective data science projects begin with a strong foundation. This guide will walk you through the essential initial stages...
+                    </p>
+                    <a href="Blogopenpage.html" class="read-more">Continue Reading</a>
+                </div>
+            </article>
+
+            
+            <article class="blog-post">
+                <img src="https://i.ytimg.com/vi/qAkHVzig4ZE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD2IQfxoy-OaScft9mHWh0CJ1rLkA" alt="Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <h2>The IIT Dream: Ways to Make it True</h2>
+                    <p class="meta">by Unknown on October 15, 2024 in <span>Career Tips</span> &#128172; 2</p>
+                    <p class="excerpt">
+                        The students who dream or make into IITs can be categorized into two: some planning early...
+                    </p>
+                    <a href="Blogopenpage.html" class="read-more">Continue Reading</a>
+                </div>
+            </article>
+
+            
+            <article class="blog-post">
+                <img src="https://machinelearningmastery.com/wp-content/uploads/2024/10/mlm-deploy-ml-models.png" alt="Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <h2>A Practical Guide to Deploying Machine Learning Models</h2>
+                    <p class="meta">by Bala Priya C on October 22, 2024 in <span>Machine Learning Resources</span> &#128172; 6</p>
+                    <p class="excerpt">
+                        As a data scientist, you probably know how to build machine learning models. But it’s only when you deploy the model...
+                    </p>
+                    <a href="Blogopenpage.html" class="read-more">Continue Reading</a>
+                </div>
+            </article>
+
+            
+            <article class="blog-post">
+                <img src="https://dezyre.gumlet.io/images/blog/top-10-machine-learning-projects-for-beginners-in-2021/image_66594082391716390009289.jpg?w=376&dpr=2.6" alt="Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <h2>5 Free Datasets to Kickstart Your Machine Learning Projects Today</h2>
+                    <p class="meta">by Jayita Guhe on October 22, 2024 in <span>Resources</span> &#128172; 5</p>
+                    <p class="excerpt">
+                        There are many free datasets online that help you practice and learn. These datasets allow you to try different techniques...
+                    </p>
+                    <a href="Blogopenpage.html" class="read-more">Continue Reading</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="advertisement">
+            <img src="https://i.ytimg.com/vi/vCEbQ5KdkCc/maxresdefault.jpg" alt="Ad Banner" class="ad-banner">
+            <div class="ad-content">
+                <h2>Last-Minute Tips for UPSC Prelims Success</h2>
+                <p>&#128197; Oct 17, 2024</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        
+        console.log("Blog page ready");
+    </script>
+        </main>
+
+    <script>
+        const searchInput = document.querySelector(".search-bar input");
+        const blogPosts = document.querySelectorAll(".blog-post");
+
+        searchInput.addEventListener("input", () => {
+            const query = searchInput.value.toLowerCase();
+
+            blogPosts.forEach(post => {
+                const title = post.querySelector("h2").textContent.toLowerCase();
+                const excerpt = post.querySelector(".excerpt").textContent.toLowerCase();
+
+                const isMatch = title.includes(query) || excerpt.includes(query);
+                post.style.display = isMatch ? "flex" : "none";
+            });
+        });
+    </script>
+</body>
+</html>
+
+</body>
+</html>

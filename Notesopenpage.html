@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Notes</title>
+    <style>
+        body, h1, ul, li, a {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #6a95f8;
+            padding: 15px 30px;
+            color: white;
+        }
+
+        .navbar .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .navbar nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar nav ul li {
+            margin: 0 15px;
+        }
+
+        .navbar nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            color: #333;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .notes-section h2 {
+            font-size: 2rem;
+            color: #6a95f8;
+            margin-bottom: 20px;
+        }
+
+        .notes-section p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .notes-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .notes-section li {
+            margin-bottom: 15px;
+        }
+
+        .view-btn {
+            display: block;
+            background-color: #6a95f8;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            text-align: center;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .view-btn:hover {
+            background-color: #5678d4;
+        }
+
+        .navbar nav ul li a.active{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Learn and Grow</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="coursesPage.html">Courses</a></li>
+                <li><a href="NotesPage.html" class="active">Notes</a></li>
+                <li><a href="BlogPage.html">Blog</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="AboutUspage.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <header class="header">
+        <h1>Programming Notes</h1>
+    </header>
+
+    <section class="content">
+        <div class="notes-section">
+            <ul>
+                <li><a href="https://mrcet.com/downloads/digital_notes/CSE/III%20Year/PYTHON%20PROGRAMMING%20NOTES.pdf" target="_blank" class="view-btn">Python Programming</a></li>
+                <li><a href="https://www.iitk.ac.in/esc101/share/downloads/javanotes5.pdf" target="_blank" class="view-btn">Java Programming</a></li>
+                <li><a href="https://vardhaman.org/wp-content/uploads/2021/03/CP.pdf" target="_blank" class="view-btn">C Programming</a></li>
+                <li><a href="https://documents.uow.edu.au/~akheng/WORKSHOP/C++%20Course%20Notes.pdf" target="_blank" class="view-btn">C++ Programming</a></li>
+            </ul>
+        </div>
+    </section>
+
+    
+
+</body>
+</html>

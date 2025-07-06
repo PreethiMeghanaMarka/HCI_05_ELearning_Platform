@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - E-Learning Platform</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      width: 80%;
+      max-width: 1200px;
+      height: 70%;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .left-section {
+      flex: 1;
+      background: url('https://img.freepik.com/free-vector/geometric-science-education-background-vector-gradient-blue-digital-remix_53876-125993.jpg') center/cover no-repeat;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .left-section h1 {
+      font-size: 2.5rem;
+      font-family: 'Georgia', serif;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .tagline {
+      font-size: 1.8rem;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .right-section {
+      flex: 1;
+      background-color: #e3ecf8;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .right-section h2 {
+      text-align: center;
+      color: #333333;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .login-form label {
+      color: #333333;
+      font-weight: bold;
+    }
+
+    .input-wrapper {
+      position: relative;
+    }
+
+    .input-wrapper input {
+      width: 100%;
+      padding: 10px;
+      padding-right: 40px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .input-wrapper span {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #333333;
+    }
+
+    .forgot-password {
+      font-size: 0.9rem;
+      text-align: right;
+      text-decoration: none;
+      color: #004080;
+    }
+
+    .forgot-password:hover {
+      text-decoration: underline;
+    }
+
+    .btn-login {
+      width: 100%;
+      padding: 10px;
+      background-color: #004080;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    .btn-login:hover {
+      background-color: #003060;
+    }
+
+    .or {
+      text-align: center;
+      color: #666666;
+      font-size: 1rem;
+    }
+
+    .social-login {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 10px;
+    }
+
+    .btn-social {
+      flex: 1;
+      padding: 10px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-social.fb {
+      background-color: #4267B2;
+      color: white;
+    }
+
+    .btn-social.google {
+      background-color: #DB4437;
+      color: white;
+    }
+
+    .signup-prompt {
+      text-align: center;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    .signup-prompt a {
+      color: #004080;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .signup-prompt a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    function movehome(){
+        event.preventDefault();
+        window.location.href ='index.html';
+    }
+    function togglePassword() {
+      const passwordField = document.getElementById('password');
+      const toggleIcon = document.querySelector('.toggle-password');
+      if (passwordField.type === 'password') {
+        passwordField.type = 'text';
+        toggleIcon.textContent = '🔒'; // Closed-eye icon
+      } else {
+        passwordField.type = 'password';
+        toggleIcon.textContent = '👁'; // Open-eye icon
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <h1>Learn and Grow</h1>
+      <p class="tagline">Where learning never stops, and growth never ends</p>
+    </div>
+    <div class="right-section">
+      <h2>Log In</h2>
+      <form class="login-form">
+        <label for="email">Your Email</label>
+        <div class="input-wrapper">
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <span class="icon">📧</span>
+        </div>
+        <label for="password">Your Password</label>
+        <div class="input-wrapper">
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          <span class="toggle-password" onclick="togglePassword()">👁</span>
+        </div>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+        <button type="submit" class="btn-login" onclick="movehome()">Log In</button>
+        <p class="or">Or</p>
+        <div class="social-login">
+          <button type="button" class="btn-social fb">Facebook</button>
+          <button type="button" class="btn-social google">Google</button>
+        </div>
+        <p class="signup-prompt">Don't have an account? <a href="SignUp.html">Sign Up</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

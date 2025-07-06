@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 14px;
+      color: #7a7a7a;
+      margin-bottom: 30px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 16px;
+      color: #333;
+      background-color: #f4f7fc;
+    }
+
+    .password-toggle {
+      position: absolute;
+      right: 20px;
+      top: 45px;
+      cursor: pointer;
+    }
+
+    .button {
+      background-color: #4c6ef5;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .button:hover {
+      background-color: #3e5be6;
+    }
+
+    .or-divider {
+      margin: 20px 0;
+      position: relative;
+    }
+
+    .or-divider::before,
+    .or-divider::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 40%;
+      height: 1px;
+      background-color: #ddd;
+    }
+
+    .or-divider::before {
+      left: 0;
+    }
+
+    .or-divider::after {
+      right: 0;
+    }
+
+    .or-divider span {
+      background-color: white;
+      padding: 0 10px;
+      font-size: 14px;
+      color: #7a7a7a;
+    }
+
+    .login-link {
+      font-size: 14px;
+      color: #4c6ef5;
+    }
+
+    .login-link:hover {
+      text-decoration: underline;
+    }
+    a{
+        text-decoration: none;
+    }
+
+  </style>
+  <script>
+    function move(){
+        event.preventDefault();
+        window.location.href ='loginPage.html';
+    }
+  </script>
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Sign up</h1>
+    <p>Create your account</p>
+    <form>
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter username" required>
+      </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter email" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required>
+        <span class="password-toggle">👁</span>
+      </div>
+      <div class="input-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password" required>
+      </div>
+      <button type="submit" class="button">Sign up</button>
+      
+      <div class="or-divider">
+        <span>Or</span>
+      </div>
+
+      <button type="button" class="button" onclick="move()">Sign in with Google</button>
+    </form>
+    <p class="login-link">Already have an account? <a href="loginPage.html">Login</a></p>
+  </div>
+
+</body>
+</html>

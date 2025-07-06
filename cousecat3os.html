@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operating Systems</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #3b5998;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff8c00;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    header {
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+    }
+    .courses-container {
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .course-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin: 10px;
+      padding: 20px;
+      width: 300px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .course-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .course-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .course-title {
+      font-size: 18px;
+      color: #3b5998;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .course-info {
+      font-size: 14px;
+      color: #555;
+      margin: 5px 0;
+    }
+    .rating {
+      margin: 10px 0;
+      font-size: 14px;
+      color: #ff8c00;
+    }
+    .rating span {
+      color: #555;
+    }
+    .course-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #3b5998;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .course-link:hover {
+      background-color: #ff8c00;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Learn Free</div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">Notes</a>
+      <a href="#">Blog</a>
+      <a href="#">Categories</a>
+      <a href="#">About Us</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Operating Systems</h1>
+    <p>Explore the best resources to understand and master Operating Systems.</p>
+  </header>
+
+  <div class="courses-container">
+    <div class="course-card">
+      <img src="https://via.placeholder.com/300x180" alt="Course Thumbnail">
+      <div class="course-title">Operating Systems Basics</div>
+      <div class="course-info">Instructor: Alice Brown</div>
+      <div class="rating">Rating: ⭐⭐⭐⭐☆ <span>(4.4)</span></div>
+      <a href="#" class="course-link">View Course</a>
+    </div>
+    <div class="course-card">
+      <img src="https://via.placeholder.com/300x180" alt="Course Thumbnail">
+      <div class="course-title">Linux for Beginners</div>
+      <div class="course-info">Instructor: Robert Green</div>
+      <div class="rating">Rating: ⭐⭐⭐⭐☆ <span>(4.6)</span></div>
+      <a href="#" class="course-link">View Course</a>
+    </div>
+    <div class="course-card">
+      <img src="https://via.placeholder.com/300x180" alt="Course Thumbnail">
+      <div class="course-title">Advanced OS Concepts</div>
+      <div class="course-info">Instructor: Emily White</div>
+      <div class="rating">Rating: ⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+      <a href="#" class="course-link">View Course</a>
+    </div>
+    <div class="course-card">
+      <img src="https://via.placeholder.com/300x180" alt="Course Thumbnail">
+      <div class="course-title">Windows OS Essentials</div>
+      <div class="course-info">Instructor: Michael Johnson</div>
+      <div class="rating">Rating: ⭐⭐⭐⭐☆ <span>(4.5)</span></div>
+      <a href="#" class="course-link">View Course</a>
+    </div>
+  </div>
+</body>
+</html>

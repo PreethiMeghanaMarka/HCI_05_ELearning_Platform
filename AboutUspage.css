@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: Nunito, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6a95f8;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 20px;
+}
+
+.navbar nav ul li {
+    margin: 0 10px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.navbar nav ul li a.active {
+    color: yellow;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.about-image img {
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-intro {
+    padding-left: 40px;
+}
+
+.about-intro h2 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about-intro .about-text {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/* Vision, Story, Offer Sections */
+.about-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.section {
+    background-color: #EDE8F5;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bg-light-blue {
+    background-color: #d4e2f2;
+}
+
+.section h3 {
+    color: #3D52A0;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    color: #555;
+    font-size: 16px;
+}
+
+/* Footer */
+.footer {
+    background-color: #3D52A0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-icons a {
+    color: white;
+    /* Changed color to white for contrast */
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #FFD700;
+}
+
+.footer p {
+    margin-top: 20px;
+    font-size: 14px;
+}

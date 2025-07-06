@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Course</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #6a95f8;
+      padding: 10px 20px;
+      color: white;
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .navbar nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar nav ul li {
+      margin: 0 10px;
+    }
+
+    .navbar nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .navbar nav ul li a.active {
+      color: yellow;
+    }
+
+
+    .hero {
+      padding: 20px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .hero iframe {
+      width: 90%;
+      max-width: 1000px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero h1 {
+      margin-top: 20px;
+      font-size: 2rem;
+      color: #333;
+    }
+
+    .curriculum {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    .curriculum-item {
+      background-color: #e1f0ff;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .curriculum-item h3 {
+      font-size: 1.5rem;
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .curriculum-item p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+   
+    .description {
+      padding: 20px;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+
+    .description h3 {
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .description p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .featured-review {
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      font-family: Arial, sans-serif;
+    }
+
+    .review-card {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .review-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .review-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid #ddd;
+    }
+
+    .review-details {
+      font-size: 0.9rem;
+    }
+
+    .reviewer-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .reviewer-meta {
+      color: #555;
+      font-size: 0.85rem;
+    }
+
+    .review-date {
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    .review-rating {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .review-rating .fa-star {
+      color: #ffc107;
+      font-size: 1.5rem;
+    }
+
+    .review-rating .fa-star.inactive {
+      color: #ddd;
+    }
+
+    .review-content {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .review-footer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .review-btn {
+      background-color: #6a95f8;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+
+    .review-btn:hover {
+      background-color: #557dd5;
+    }
+
+    .report-link {
+      font-size: 0.9rem;
+      color: #888;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .report-link:hover {
+      color: #555;
+    }
+
+   
+    .footer {
+      text-align: center;
+      background-color: #6a95f8;
+      color: white;
+      padding: 20px;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Learn and Grow</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="coursesPage.html" class="active">Courses</a></li>
+        <li><a href="NotesPage.html">Notes</a></li>
+        <li><a href="BlogPage.html">Blog</a></li>
+        <li><a href="category.html">Categories</a></li>
+        <li><a href="AboutUspage.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <iframe width="90%" height="500px" src="https://www.youtube.com/embed/u72H_zZzkcw?si=jAfjlCL_IFFpUUou"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <h1>01 - Intro to HTML</h1>
+  </section>
+
+  <section class="curriculum">
+    <div class="curriculum-item">
+      <h3>01</h3>
+      <p>Introduction to HTML</p>
+    </div>
+    <div class="curriculum-item">
+      <h3>02</h3>
+      <p>Styling with CSS</p>
+    </div>
+    <div class="curriculum-item">
+      <h3>03</h3>
+      <p>Responsive Design</p>
+    </div>
+    <div class="curriculum-item">
+      <h3>04</h3>
+      <p>Design Principles</p>
+    </div>
+    <div class="curriculum-item">
+      <h3>05</h3>
+      <p>Building a Basic Website</p>
+    </div>
+  </section>
+
+  <section class="description">
+    <h3>Description</h3>
+    <p>Now with over 10 hours of React content. Just updated on May 15th, 2023...</p>
+  </section>
+
+  <section class="featured-review">
+    <div class="review-card">
+      <!-- Reviewer Details -->
+      <div class="review-header">
+        <img class="review-avatar" src="https://via.placeholder.com/50" alt="Reviewer Avatar">
+        <div class="review-details">
+          <h3 class="reviewer-name">Mudigaga Moody U.</h3>
+          <p class="reviewer-meta">20 courses | 14 reviews</p>
+          <p class="review-date">4 years ago</p>
+        </div>
+      </div>
+
+      <div class="review-content">
+        <p>
+          This course is quite comprehensive when compared with other courses available on this platform, which is why I
+          bought it.
+          It is packed full of amazing content and, like the description, it did make me a full-stack web developer.
+          The instructor is a very good teacher, using visual aids and simple illustrations to drive home a point.
+          This course does not teach everything but covers the basics of both frontend and backend development.
+          I enjoyed the course, the jokes, the projects, and the challenges.
+        </p>
+      </div>
+
+      <div class="review-rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star inactive"></i>
+      </div>
+
+      <div class="review-content">
