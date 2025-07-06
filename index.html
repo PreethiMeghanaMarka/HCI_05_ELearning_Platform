@@ -6,242 +6,47 @@
     <title>Educational Platform</title>
     <link rel="stylesheet" href="page1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f5f5f5;
-}
-
-.header {
-    background-color: #7091E6;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 20px;
-}
-
-.header .logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-
-.header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.header nav ul li a.active {
-    color: #FFD700;
-}
-
-.banner {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 40px;
-    background-color: #d4e2f2;
-}
-
-.banner img {
-    width: 50%;
-    border-radius: 8px;
-}
-
-.banner-text {
-    max-width: 500px;
-}
-
-.banner-text h2 {
-    font-size: 24px;
-    color: #293153;
-    margin-bottom: 15px;
-}
-
-.banner-text p {
-    color: #555;
-    margin-bottom: 20px;
-}
-
-.search-bar {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.search-bar input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-}
-
-.search-bar button {
-    background-color: #3D52A0;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Why Learn with Us */
-.why-learn {
-    background-color: #f5f5f5;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.why-learn h2 {
-    color: #3D52A0;
-    margin-bottom: 20px;
-}
-
-.features {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.feature {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 150px;
-}
-
-.feature i {
-    font-size: 30px;
-    color: #7091E6;
-    margin-bottom: 10px;
-}
-
-.feature p {
-    color: #555;
-}
-
-/* Meet Our Teachers */
-.teachers {
-    background-color: #d4e2f2;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.teachers h2 {
-    color: #3D52A0;
-    margin-bottom: 20px;
-}
-
-.teacher-profiles {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.teacher {
-    text-align: center;
-}
-
-.teacher img {
-    border-radius: 50%;
-    width: 100px;
-}
-
-.teacher p {
-    margin-top: 10px;
-    color: #555;
-}
-
-/* Popular Courses */
-.popular-courses {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.popular-courses h2 {
-    color: #3D52A0;
-    margin-bottom: 20px;
-}
-
-.course-cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.course-card {
-    background-color: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 150px;
-    text-align: center;
-}
-
-.course-card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.course-card p {
-    color: #555;
-}
-
-.banner img {
-    width: 50%; /* Adjust this percentage as needed */
-    max-width: 800px; /* Set a maximum width */
-    max-height: 600px;
-    border-radius: 8px;
-}
-
-    </style>
+    
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="logo">Logo</div>
+    
+    <header class="navbar">
+        <div class="logo">Learn and Grow</div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#" class="active">Courses</a></li>
-                <li><a href="#">Notes</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="coursesPage.html">Courses</a></li>
+                <li><a href="NotesPage.html">Notes</a></li>
+                <li><a href="BlogPage.html">Blog</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="AboutUspage.html">About Us</a></li>
             </ul>
         </nav>
     </header>
 
+
     <!-- Banner Section -->
     <section class="banner">
-        <img src="https://superworks.com/wp-content/uploads/2024/05/cropped-poster-image-Loan-Management-System-Workflow.webp" alt="Banner Image">
+        <img src="https://images.pexels.com/photos/6347902/pexels-photo-6347902.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Banner Image">
         <div class="banner-text">
-            <h2>Discover, Learn, and Achieve — The Future of Education Starts Here</h2>
-            <p>Unlock the potential to learn, innovate, and grow. Our platform provides access to top-notch courses, flexible learning, and a global community of learners. Join us in shaping your future with personalized learning that is designed to fit your needs.</p>
             <div class="search-bar">
                 <input type="text" placeholder="Search courses...">
                 <button><i class="fas fa-search"></i></button>
             </div>
+            <h2>Discover, Learn, and Achieve — The Future of Education Starts Here</h2>
+            <p>
+                Unlock the potential to learn, innovate, and grow. Our platform provides access to 
+                top-notch courses, flexible learning, and a global community of learners. Join us in shaping 
+                your future with personalized learning that is designed to fit your needs.
+            </p>
         </div>
     </section>
+    
+    
+    
 
-    <!-- Why Learn with Us Section -->
+    
     <section class="why-learn">
         <h2>Why Learn with Us?</h2>
         <div class="features">
@@ -272,43 +77,43 @@ body {
         </div>
     </section>
 
-    <!-- Meet Our Teachers Section -->
+    
     <section class="teachers">
         <h2>Meet our Teachers</h2>
         <div class="teacher-profiles">
             <div class="teacher">
-                <img src="https://media.licdn.com/dms/image/v2/D4D22AQGKYeIRrYE0Rw/feedshare-shrink_800/feedshare-shrink_800/0/1690650932821?e=2147483647&v=beta&t=-F9dT5dnqcTNebWiLm5RpcnFhAK-aqom-MLvnt5Ac7E" alt="Teacher 1">
+                <img src="https://cdn.pixabay.com/photo/2024/05/23/20/18/ai-generated-8783789_1280.jpg" alt="Teacher 1">
                 <p>Shradha Khapra</p>
             </div>
             <div class="teacher">
-                <img src="https://cdn.prod.website-files.com/5de98c06bb83ab1e27fc1c95/66e092815f27765c074cd4d5_bf51b3cdc48dcf64d197282b24c4ae7f58ad60e4.jpeg" alt="Teacher 2">
+                <img src="https://cdn.pixabay.com/photo/2022/04/15/15/34/gesture-7134756_1280.jpg" alt="Teacher 2">
                 <p>Alakh Pandey</p>
             </div>
             <div class="teacher">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD1TGT6Wa7Xnwa3rBVrQVZc2642oxZY5DLpQ&s" alt="Teacher 3">
+                <img src="https://images.pexels.com/photos/8326324/pexels-photo-8326324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Teacher 3">
                 <p>Aman Dhattarwal</p>
             </div>
         </div>
     </section>
 
-    <!-- Popular Courses Section -->
+    
     <section class="popular-courses">
         <h2>Popular Courses</h2>
         <div class="course-cards">
             <div class="course-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFm_-1WTTI6q_i4pyfuw46je0a_-NUzNqsYA&s" alt="Course 1">
+                <img src="https://github.com/PreethiMeghanaMarka/HCI_05_ELearning_Platform/blob/main/images/WhatsApp%20Image%202025-05-20%20at%2012.24.07_74b5925c.jpg?raw=true" alt="Course 1">
                 <p>DSA Series</p>
             </div>
             <div class="course-card">
-                <img src="https://via.placeholder.com/150" alt="Course 2">
+                <img src="https://images.pexels.com/photos/16129724/pexels-photo-16129724/free-photo-of-man-working-on-computers-coding.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Course 2">
                 <p>Video Editing</p>
             </div>
             <div class="course-card">
-                <img src="https://via.placeholder.com/150" alt="Course 3">
+                <img src="https://github.com/PreethiMeghanaMarka/HCI_05_ELearning_Platform/blob/main/images/ChatGPT%20Image%20May%2020,%202025,%2011_11_14%20PM.png?raw=true" alt="Course 3">
                 <p>Web Development Bootcamp</p>
             </div>
             <div class="course-card">
-                <img src="https://via.placeholder.com/150" alt="Course 4">
+                <img src="https://github.com/PreethiMeghanaMarka/HCI_05_ELearning_Platform/blob/main/images/Introduction%20to%20Kinematics%20Illustration.png?raw=true" alt="Course 4">
                 <p>Introduction to Kinematics</p>
             </div>
         </div>
